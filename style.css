@@ -1,4 +1,4 @@
-/* 🌤️ Beautiful Weather Theme */
+/*  Weather Theme */
 body {
   margin: 0;
   padding: 0;
@@ -120,3 +120,4 @@ button:hover {
   0% { transform: translateX(0); }
   100% { transform: translateX(120%); }
 }
+
