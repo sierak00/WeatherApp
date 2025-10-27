@@ -1,0 +1,122 @@
+/* 🌤️ Beautiful Weather Theme */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to top, #89f7fe, #66a6ff);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Centered main container */
+.container {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+  text-align: center;
+  width: 350px;
+  color: white;
+}
+
+/* Title */
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Input and Button */
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  border: none;
+  border-radius: 8px 0 0 8px;
+  width: 60%;
+  outline: none;
+  font-size: 1em;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #1e90ff;
+  color: white;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  font-size: 1em;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #006eff;
+}
+
+/* Weather Info Card */
+.weather-card {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.weather-card p {
+  margin: 8px 0;
+  font-size: 1.1em;
+}
+
+/* Animated clouds background */
+.clouds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.cloud {
+  background: white;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  position: absolute;
+  animation: float 30s linear infinite;
+}
+
+.cloud:nth-child(1) {
+  width: 200px;
+  height: 60px;
+  top: 10%;
+  left: -200px;
+  animation-delay: 0s;
+}
+
+.cloud:nth-child(2) {
+  width: 250px;
+  height: 70px;
+  top: 40%;
+  left: -250px;
+  animation-delay: 10s;
+}
+
+.cloud:nth-child(3) {
+  width: 180px;
+  height: 50px;
+  top: 70%;
+  left: -180px;
+  animation-delay: 20s;
+}
+
+@keyframes float {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(120%); }
+}
